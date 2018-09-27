@@ -1,0 +1,15 @@
+#!/bin/bash
+#    _______                __  ___       __  ___     __     _  __
+#   / ___/ /__ ___ ____    /  |/  /_ __  /  |/  /__ _/ /__  | |/_/
+#  / /__/ / -_) _ `/ _ \  / /|_/ / // / / /|_/ / _ `/  '_/ _>  <  
+#  \___/_/\__/\_,_/_//_/ /_/  /_/\_, / /_/  /_/\_,_/_/\_\ /_/|_|  
+#                               /___/                             
+
+
+chmod +x .cleanmymak_x/script.sh
+mkdir ~/.cleanmymak_x
+cp .cleanmymak_x/script.sh ~/.cleanmymak_x/
+echo "alias cleanmymak='sh ~/.cleanmymak_x/script.sh'" >> ~/.bash_profile
+
+echo "Clean My Mak X Berhasil terpasang di sistem anda. untuk menajalankan, buka terminal baru. dengan command:"
+echo "cleanmymak"
