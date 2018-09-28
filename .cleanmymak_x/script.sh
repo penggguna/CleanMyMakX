@@ -48,6 +48,12 @@ case $persetujuan in
     echo 'Dan menghapus cookie users'
     ( set -x; pwd; rm -rf Cookies/)
 
+    echo "Menuju ke direktori library user..."
+    cd ~/Library/
+    find Logs/
+    echo 'Dan menghapus log users'
+    ( set -x; pwd; rm -rf Logs/)
+
     echo "Menuju ke direktori library sistem..."
     cd /Library/
     find Caches/
@@ -59,6 +65,12 @@ case $persetujuan in
     find Cookies/
     echo 'Dan menghapus cookie sistem'
     ( set -x; pwd; rm -rf Cookies/)
+
+    echo "Menuju ke direktori library sistem..."
+    cd /Library/
+    find Logs/
+    echo 'Dan menghapus cookie sistem'
+    ( set -x; pwd; rm -rf Logs/)
 
     echo "Menuju ke direktori xcode..."
     cd ~/Library/Developer/Xcode
