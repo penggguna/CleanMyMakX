@@ -54,6 +54,12 @@ case $persetujuan in
     echo 'Dan menghapus log users'
     ( set -x; pwd; rm -rf Logs/)
 
+    echo "Menuju ke direktori library user..."
+    cd ~/Library/
+    find Containers/
+    echo 'Dan menghapus containers users'
+    ( set -x; pwd; rm -rf Containers/)
+
     echo "Menuju ke direktori library sistem..."
     cd /Library/
     find Caches/
