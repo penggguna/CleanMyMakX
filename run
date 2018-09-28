@@ -7,6 +7,7 @@
 
 
 chmod +x .cleanmymak_x/script.sh
+rm -rf ~/.cleanmymak_x
 mkdir ~/.cleanmymak_x
 cp .cleanmymak_x/script.sh ~/.cleanmymak_x/
 echo "alias cleanmymak='sh ~/.cleanmymak_x/script.sh'" >> ~/.bash_profile
